@@ -25,14 +25,15 @@ const Navbar = ({ title }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", handleMobile);
-    console.log("resize event");
+    handleMobile();
   }, []);
+
+  window.addEventListener('resize', handleMobile);
 
   return (
     <div className="navbar">
       <div className="logo">
-        <Link className="logo-img-link" to={"/"} onClick={() => setClicked(false)}>
+        <Link className="logo-img-link" to={"/portfolio-bs"} onClick={() => setClicked(false)}>
           <img src={logo} alt="logo" />
         </Link>
       </div>
@@ -47,8 +48,9 @@ const Navbar = ({ title }) => {
             ? `${clicked ? "nav-links-mob active" : "nav-links-mob"}`
             : "nav-links"
         }
+        onClick={() => setClicked(false)}
       >
-        <Link className="link" to="/" onClick={() => setClicked(false)}>
+        <Link className="link" to="/portfolio-bs" onClick={() => setClicked(false)}>
           Home
         </Link>
         <Link className="link" to="projects" onClick={() => setClicked(false)}>
