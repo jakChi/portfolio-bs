@@ -1,5 +1,4 @@
 
-
 .home > * {
   margin: 0;
   padding: 0;
@@ -53,7 +52,7 @@ h1, h4{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+  width: 90%;
   height: 60vh;
   margin: auto;
 }
@@ -104,14 +103,14 @@ h1, h4{
 /* aq rame martivi selectori unda vipovo */
 .contact-div > i {
   position: absolute;
-  top: 5px;
+  top: 25px;
   left: 82%;
   font-size: 25px;
   color: var(--text-main-col);
 }
 .projects-div > i {
   position: absolute;
-  bottom: 5px;
+  bottom: 25px;
   right: 82%;
   font-size: 25px;
   color:var(--text-main-col);
@@ -123,6 +122,7 @@ h1, h4{
   width: 98%; 
   height: 100vh;
   border-radius: 5px;
+  position: relative;
 }
 
 .projects-grid {

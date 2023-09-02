@@ -107,12 +107,12 @@ body {
 
   .logo {
     margin: auto;
-    width: 30%;
+    width: 35%;
     z-index: 3;
   }
   
   .logo-img-link img {
-    margin: 0 calc(50% - 30px);
+    margin: 0 calc(50% - 25px);
   }
 
   .menu-icon {
@@ -148,7 +148,7 @@ body {
   
   .nav-links-mob > .link {
     transform: translateY(-500%);
-    width: 80%;
+    width: 30%;
     height: 70px;
     text-align: center;
     text-decoration: none;
@@ -156,7 +156,7 @@ body {
     font-size: 30px;
     border: 3px solid var(--text-main-col);
     border-radius: 15px;
-    transition: all 1s ease-out;
+    transition: all 1.5s ease-out;
     transition-delay: 100ms;
     z-index: 0;
   }
@@ -179,6 +179,7 @@ body {
     transform: translateY(100%);
     transition-delay: 100ms;
     z-index: 0;
+    width: 70%;
   }
 
   .nav-links-mob.active > .link:nth-child(2) {
