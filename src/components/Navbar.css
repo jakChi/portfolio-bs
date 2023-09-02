@@ -71,7 +71,7 @@ body {
   font-family: var(--nav-font);
   text-decoration: none;
   line-height: 50px;
-  color: var(--link-col);
+  color: var(--text-main-col);
   outline: none;
   border: 2px solid var(--body-col);
   border-bottom-width: 0;
