@@ -6,10 +6,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareCaretDown,
   faSquareXmark,
+  faHouseFlag,
+  faBarsProgress,
+  faAt,
 } from "@fortawesome/free-solid-svg-icons";
 
 const MENU = <FontAwesomeIcon icon={faSquareCaretDown} />;
 const XMARK = <FontAwesomeIcon icon={faSquareXmark} />;
+const HOME = <FontAwesomeIcon icon={faHouseFlag} />;
+const PROJECTS = <FontAwesomeIcon icon={faBarsProgress} />;
+const CONTACT = <FontAwesomeIcon icon={faAt} />;
 
 const Navbar = ({ title }) => {
   const [mobile, setMobile] = useState(false);
@@ -20,7 +26,7 @@ const Navbar = ({ title }) => {
   };
 
   const handleMobile = () => {
-    window.innerWidth <= 550 ? setMobile(true) : setMobile(false);
+    window.innerWidth <= 600 ? setMobile(true) : setMobile(false);
     setClicked(false);
   };
 
@@ -28,12 +34,16 @@ const Navbar = ({ title }) => {
     handleMobile();
   }, []);
 
-  window.addEventListener('resize', handleMobile);
+  window.addEventListener("resize", handleMobile);
 
   return (
     <div className="navbar">
       <div className="logo">
-        <Link className="logo-img-link" to={"/portfolio-bs"} onClick={() => setClicked(false)}>
+        <Link
+          className="logo-img-link"
+          to={"/portfolio-bs"}
+          onClick={() => setClicked(false)}
+        >
           <img src={logo} alt="logo" />
         </Link>
       </div>
@@ -50,15 +60,22 @@ const Navbar = ({ title }) => {
         }
         onClick={() => setClicked(false)}
       >
-        <Link className="link" to="/portfolio-bs" onClick={() => setClicked(false)}>
-          Home
+        <Link
+          className="link"
+          to="/portfolio-bs"
+          onClick={() => setClicked(false)}
+        >
+          Home {HOME}
         </Link>
         <Link className="link" to="projects" onClick={() => setClicked(false)}>
-          Projects
+          Projects {PROJECTS}
         </Link>
         <Link className="link" to="contact" onClick={() => setClicked(false)}>
-          Contact
+          Contact {CONTACT}
         </Link>
+        {clicked ? (
+          <h4 className="developer-text">Developed By JakChi</h4>
+        ) : null}
       </ul>
     </div>
   );
