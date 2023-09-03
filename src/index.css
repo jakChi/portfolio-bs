@@ -5,7 +5,11 @@
   --link-col: #c20388;
   --txt-col: #8f0578;
   --shadow-col: #06055e;
-  --nav-font: 'Lobster', cursive;
+  --main-font: 'Josefin Sans', sans-serif;
+  --nav-font: 'Saira Condensed', sans-serif;
   --footer-col: #0a0229;
   --footer-text-col: #07993f;
+
+
+  font-family: var(--main-font);
 }

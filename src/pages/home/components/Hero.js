@@ -8,11 +8,14 @@ import { faAnglesUp, faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 const UP_ARROW = <FontAwesomeIcon icon={faAnglesUp} />;
 const DOWN_ARROW = <FontAwesomeIcon icon={faAnglesDown} />;
 
-const Hero = ({mobile}) => {
+//document.getElementsByClassName("video").defaultPlaybackRate = 3.0;
+
+const Hero = ({ mobile }) => {
   return (
     <div className="hero">
       <div className="video-frame">
         <video
+          className="video"
           src={video}
           autoPlay
           loop
@@ -20,6 +23,7 @@ const Hero = ({mobile}) => {
           preload="auto"
           poster="https://th.bing.com/th/id/OIP.gYyvBOuQwXSWuefMRBZp9gAAAA?pid=ImgDet&rs=1"
         />
+
         <h1>Hi my name is jakob</h1>
         <h4>I am a self taught React developer and Computational biologist</h4>
         <div className="txt-btn-group">
