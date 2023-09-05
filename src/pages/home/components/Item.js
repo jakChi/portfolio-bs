@@ -2,7 +2,7 @@ import React from "react";
 import "../Home.css";
 import { Link } from "react-router-dom";
 
-const MiniProject = ({ className, picSrc, caption }) => {
+const Item = ({ className, picSrc, caption }) => {
   return (
     <div className={className}>
       <figure className="screenshot">
@@ -16,4 +16,4 @@ const MiniProject = ({ className, picSrc, caption }) => {
   );
 };
 
-export default MiniProject;
+export default Item;

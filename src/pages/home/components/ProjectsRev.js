@@ -1,12 +1,11 @@
 import React from "react";
 import "../Home.css";
-import retroCalc from "../../../images/retro-calc.png";
+import retroCalc from "../../../images/calc.png";
 import jazz from "../../../images/jazz-blog.png";
-import randomQuotes from "../../../images/random-quotes.png";
 import searchFilter from "../../../images/search-filter.png";
 import shoppingList from "../../../images/shopping-list.png";
 import ticTacToe from "../../../images/tictactoe.png";
-import MiniProject from "./MiniProject";
+import Item from "./Item";
 
 
 const dummyImg = "https://dummyimage.com/300x200";
@@ -34,11 +33,6 @@ const ProjectsRev = () => {
       caption: "Search Filter with simple design and random names API",
     },
     {
-      className: "recipes",
-      picSrc: randomQuotes,
-      caption: "API based Meal Recipes App",
-    },
-    {
       className: "tictactoe",
       picSrc: ticTacToe,
       caption: "Tic-Tac-Toe game with ongoing play history",
@@ -47,12 +41,13 @@ const ProjectsRev = () => {
 
   return (
     <div className="projects-rev">
+      <h2 className="grid-title">Projects Review</h2>
       <div className="grid">
         {projects.map((project, index) => (
-          <MiniProject
+          <Item
             key={index}
             className={project.className}
-            picSrc={dummyImg}
+            picSrc={project.picSrc}
             caption={project.caption}
           />
         ))}
