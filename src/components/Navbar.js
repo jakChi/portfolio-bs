@@ -20,6 +20,7 @@ const CONTACT = <FontAwesomeIcon icon={faAt} />;
 const Navbar = ({ title }) => {
   const [mobile, setMobile] = useState(false);
   const [clicked, setClicked] = useState(false);
+  const [currentPage, setCurrentPage] = useState("Home ");
 
   const handleClick = () => {
     setClicked(!clicked);
@@ -30,10 +31,37 @@ const Navbar = ({ title }) => {
     setClicked(false);
   };
 
+
+  //when user scrolls navbar should hide with this but it's not working
+
+  // let navStyle = {top: 0}
+  // const hideNavbar = () => {
+  //   let prevScrollPos = window.scrollY;
+  //   const scrollPos = window.scrollY;
+  //   //console.log(Math.round(scrollPos) + " " + Math.round(prevScrollPos));
+
+  //   if (scrollPos > prevScrollPos) {
+  //     navStyle = {
+  //       top: "-100px",
+  //     };
+  //   } else {
+  //     navStyle = {
+  //       top: 0,
+  //     };
+  //   }
+  //   prevScrollPos = scrollPos;
+  // };
+
+  const handlePageChanges = (e) => {
+    setClicked(false);
+    setCurrentPage(e.target.innerText);
+  }
+
   useEffect(() => {
     handleMobile();
   }, []);
-
+  
+  //window.addEventListener("scroll", hideNavbar);
   window.addEventListener("resize", handleMobile);
 
   return (
@@ -61,16 +89,30 @@ const Navbar = ({ title }) => {
         onClick={() => setClicked(false)}
       >
         <Link
-          className="link"
+          className={`link ${
+            currentPage === "Home " ? "active-page" : null
+          }`}
           to="/portfolio-bs"
-          onClick={() => setClicked(false)}
+          onClick={handlePageChanges}
         >
           Home {HOME}
         </Link>
-        <Link className="link" to="projects" onClick={() => setClicked(false)}>
+        <Link
+          className={`link ${
+            currentPage === "Projects " ? "active-page" : null
+          }`}
+          to="projects"
+          onClick={handlePageChanges}
+        >
           Projects {PROJECTS}
         </Link>
-        <Link className="link" to="contact" onClick={() => setClicked(false)}>
+        <Link
+          className={`link ${
+            currentPage === "Contact " ? "active-page" : null
+          }`}
+          to="contact"
+          onClick={handlePageChanges}
+        >
           Contact {CONTACT}
         </Link>
         {clicked ? (

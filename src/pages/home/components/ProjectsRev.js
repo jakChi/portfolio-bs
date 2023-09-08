@@ -20,17 +20,17 @@ const ProjectsRev = () => {
     {
       className: "shop-list",
       picSrc: shoppingList,
-      caption: "Retro Style Shopping list(Yeah I like retro stuff;))",
+      caption: "Retro Style Shopping list",
     },
     {
       className: "weather",
       picSrc: jazz,
-      caption: "Solid Weather app with API and Changing colors",
+      caption: "Solid Weather app with Changing colors",
     },
     {
       className: "search",
       picSrc: searchFilter,
-      caption: "Search Filter with simple design and random names API",
+      caption: "Search Filter with simple design",
     },
     {
       className: "tictactoe",

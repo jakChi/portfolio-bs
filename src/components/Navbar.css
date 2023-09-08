@@ -18,9 +18,10 @@ body {
   justify-content: space-between;
   background-color: var(--body-col);
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   z-index: 2;
+  border-bottom: 1px solid var(--text-main-col);
 }
 
 .logo {
@@ -78,9 +79,14 @@ body {
   transition: all 100ms ease;
 }
 
+.link.active-page {
+  color: var(--txt-col);
+  border-bottom: 2px solid var(--text-main-col);
+  transition: all 300ms ease;
+}
+
 .link:hover {
   border-bottom: 2px solid var(--text-main-col);
-  color: var(--text-main-col)
 }
 
 .nav-links-mob {

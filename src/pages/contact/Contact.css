@@ -1,38 +1,105 @@
 .contact > * {
-  border: 1px solid green;
+  margin: 0;
+  padding: 0;
 }
 
 .contact {
-  margin-top: 80px;
+  margin-top: 60px;
   width: 100%;
   height: 100vh;
   text-align: center;
 }
 
 .title {
+  width: 80%;
   padding: 10px;
+  margin: auto;
   font-size: 17px;
-  color: var(--txt-col);
-  border-bottom: 2px solid var(--txt-col);
+  color: var(--contacts-col);
+  text-align: center;
+}
+
+.email-form {
+  margin: 30px auto;
+  width: 80%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;  
 }
 
 .email-input {
   outline: none;
   width: 50%;
-  height: 5%;
-  margin: 10px;
-  border-radius: 3px;
+  height: 30%;
+  max-height: 30px;
+  margin: 5px;
+  padding: 5px;
   background-color: transparent;
   border: 2px solid var(--text-main-col);
+  border-radius: 10px;
   text-align: center;
+  font-size: 14px;
+  color: var(--contacts-col);
+  transition: all 300ms ease;
 }
 
-.sub-button {
+.email-input:focus {
+  box-shadow: 0 0 10px 1px var(--contacts-col);
+  width: 80%;
+  border-radius: 20px;
+}
+
+.email-input::placeholder {
+  color: var(--contacts-col);
+  opacity: 80%;
+}
+
+.sub-text {
+  color: var(--contacts-col);
+  font-family: monospace;
+  font-size: 10px;
+  opacity: 0;
+  transition: all 800ms ease;
+}
+
+.sub-text.active {
+  opacity: 1;
+}
+
+/* .sub-button {
   outline: none;
-  width: 20%;
-  height: 5%;
+  width: 30%;
+  margin: 10px;
   background-color: transparent;
-  border: 2px solid var(--text-main-col);
-  border-radius: 5px;
-  color: var(--txt-col);
+  color: var(--text-main-col);
+  font-size: 12px;
+  position: relative;
+  border: 1px solid var(--text-main-col);
+  opacity: 0;
+  transition: all 800ms ease;
+}
+
+.sub-button.active {
+  opacity: 1;
+}
+
+.sub-button:active {
+  background-color: var(--txt-col);
+  color: var(--footer-col);
+} */
+
+@media screen and (min-width: 768px) {
+  
+  .title {
+    max-width: 400px;
+    font-size: 24px;
+    margin: 20px auto;
+  }
+ 
+  .email-form {
+    max-width: 470px;
+    height: 40%;
+  }
 }

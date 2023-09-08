@@ -34,7 +34,7 @@ const Footer = () => {
       <ul className="other-links">
         <Link>Create React App</Link>
         <Link>React Router</Link>
-        <Link>some other referance</Link>
+        <Link to="contact">sing up</Link>
       </ul>
       <address className="copyright">
         <p>&copy; Developed by jakChi 2023 | All Rights Reserved</p>
