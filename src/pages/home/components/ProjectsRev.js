@@ -1,14 +1,14 @@
 import React from "react";
 import "../Home.css";
-import retroCalc from "../../../images/calc.png";
-import jazz from "../../../images/jazz-blog.png";
-import searchFilter from "../../../images/search-filter.png";
-import shoppingList from "../../../images/shopping-list.png";
-import ticTacToe from "../../../images/tictactoe.png";
+import retroCalc from "../../../assets/images/calc.png";
+import jazz from "../../../assets/images/jazz-blog.png";
+import searchFilter from "../../../assets/images/search-filter.png";
+import shoppingList from "../../../assets/images/shopping-list.png";
+import ticTacToe from "../../../assets/images/tictactoe.png";
 import Item from "./Item";
 
 
-const dummyImg = "https://dummyimage.com/300x200";
+//const dummyImg = "https://dummyimage.com/300x200";
 
 const ProjectsRev = () => {
   const projects = [

@@ -17,8 +17,7 @@ const HOME = <FontAwesomeIcon icon={faHouseFlag} />;
 const PROJECTS = <FontAwesomeIcon icon={faBarsProgress} />;
 const CONTACT = <FontAwesomeIcon icon={faAt} />;
 
-const Navbar = ({ title }) => {
-  const [mobile, setMobile] = useState(false);
+const Navbar = ({ mobile }) => {
   const [clicked, setClicked] = useState(false);
   const [currentPage, setCurrentPage] = useState("Home ");
 
@@ -26,11 +25,7 @@ const Navbar = ({ title }) => {
     setClicked(!clicked);
   };
 
-  const handleMobile = () => {
-    window.innerWidth <= 600 ? setMobile(true) : setMobile(false);
-    setClicked(false);
-  };
-
+  
 
   //when user scrolls navbar should hide with this but it's not working
 
@@ -57,12 +52,7 @@ const Navbar = ({ title }) => {
     setCurrentPage(e.target.innerText);
   }
 
-  useEffect(() => {
-    handleMobile();
-  }, []);
-  
   //window.addEventListener("scroll", hideNavbar);
-  window.addEventListener("resize", handleMobile);
 
   return (
     <div className="navbar">

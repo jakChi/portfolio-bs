@@ -1,15 +1,14 @@
 :root {
   --body-col: #03293a;
   --text-main-col: #13c296;
-  --link-col: #bb0770;
-  --txt-col: #a907b8;
-  --contacts-col: #00dd63;
+  --fav-light: #0aa5985e;
+  --magenta: #a907b8;
+  --green: #00dd63;
   --projects-col: #e9e500;
   --main-font: 'Josefin Sans', sans-serif;
   --nav-font: 'Saira Condensed', sans-serif;
   --footer-col: #0a0229;
-  --footer-text-col: #07993f;
-
+  
 
   font-family: var(--main-font);
 }

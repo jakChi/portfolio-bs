@@ -1,12 +1,12 @@
 import React from "react";
 import "../Home.css";
-import video from "../../../videos/gradient.mp4";
+import video from "../../../assets/videos/gradient.mp4";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAnglesUp, faAnglesDown } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesRight, faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
 
-const UP_ARROW = <FontAwesomeIcon icon={faAnglesUp} />;
-const DOWN_ARROW = <FontAwesomeIcon icon={faAnglesDown} />;
+const LEFT_ARROW = <FontAwesomeIcon icon={faAnglesLeft} />;
+const RIGHT_ARROW = <FontAwesomeIcon icon={faAnglesRight} />;
 
 //document.getElementsByClassName("video").defaultPlaybackRate = 3.0;
 
@@ -32,7 +32,7 @@ const Hero = ({ mobile }) => {
               I will try to make your ideas reality look around here and if you
               consider to contacts me here's everything you need to know
             </p>
-            <i>{DOWN_ARROW}</i>
+            <i>{RIGHT_ARROW}</i>
             <Button
               className={mobile ? "contact-btn-sm" : "contact-btn-lg"}
               value={"Contact"}
@@ -43,7 +43,7 @@ const Hero = ({ mobile }) => {
               className={mobile ? "projects-btn-sm" : "projects-btn-lg"}
               value={"Projects"}
             />
-            <i>{UP_ARROW}</i>
+            <i>{LEFT_ARROW}</i>
             <p className="projects-text">
               For your convinience I have created mini review of my work you can
               see below here! or you can visit my projects page here

@@ -37,7 +37,7 @@ body {
   border-radius: 5px;
   position: absolute;  
   z-index: -1;
-  filter: blur(150px);
+  filter: blur(200px);
   opacity: 80%;
 }
 
@@ -45,6 +45,7 @@ h1, h4{
   text-align: center;
   margin-top: 0;
   padding: 30px;
+  color: var(--text-main-col); 
 }
 
 .txt-btn-group {
@@ -71,8 +72,8 @@ h1, h4{
   max-width: 300px;
   margin: auto 0;
   padding: 5px; 
+  color: var(--green);
 }
-
 
 .contact-div::before {
   content: "";
@@ -124,11 +125,11 @@ h1, h4{
 }
 
 .grid-title {
-  width: 50%;
+  width: 30%;
   margin: 20px auto;
   padding: 10px;
   text-align: center;
-  border-bottom: 2px solid var(--txt-col);
+  border-bottom: 2px solid var(--magenta);
   color: var(--text-main-col);
 }
 
@@ -178,7 +179,7 @@ h1, h4{
   left: 0;
   top: 0;
   border-bottom: 2px solid transparent;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .screenshot > figcaption:after {
@@ -188,7 +189,7 @@ h1, h4{
   position: absolute;
   left: -2px;
   top: -1px;
-  transition: all 800ms ease;
+  transition: all 300ms ease;
   border-bottom: 4px solid var(--footer-col);
 }
 
@@ -199,7 +200,7 @@ h1, h4{
 
 .screenshot:hover > figcaption:after {
   width: calc(100% + 3px);
-  transition-delay: 500ms;
+  transition-delay: 300ms;
 }
 
 .screenshot:active {

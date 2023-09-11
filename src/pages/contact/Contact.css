@@ -4,9 +4,8 @@
 }
 
 .contact {
-  margin-top: 60px;
+  margin-top: 100px;
   width: 100%;
-  height: 100vh;
   text-align: center;
 }
 
@@ -15,7 +14,7 @@
   padding: 10px;
   margin: auto;
   font-size: 17px;
-  color: var(--contacts-col);
+  color: var(--green);
   text-align: center;
 }
 
@@ -41,23 +40,23 @@
   border-radius: 10px;
   text-align: center;
   font-size: 14px;
-  color: var(--contacts-col);
+  color: var(--green);
   transition: all 300ms ease;
 }
 
 .email-input:focus {
-  box-shadow: 0 0 10px 1px var(--contacts-col);
+  box-shadow: 0 0 10px 1px var(--green);
   width: 80%;
   border-radius: 20px;
 }
 
 .email-input::placeholder {
-  color: var(--contacts-col);
+  color: var(--green);
   opacity: 80%;
 }
 
 .sub-text {
-  color: var(--contacts-col);
+  color: var(--green);
   font-family: monospace;
   font-size: 10px;
   opacity: 0;
@@ -89,6 +88,20 @@
   background-color: var(--txt-col);
   color: var(--footer-col);
 } */
+
+.about {
+  margin: auto;
+  width: 90%;
+ 
+}
+
+.resume {
+  margin: 30px auto;
+  width: 100%;
+  height: 100vh;
+  border: none;
+  border-radius: 10px;
+}
 
 @media screen and (min-width: 768px) {
   
