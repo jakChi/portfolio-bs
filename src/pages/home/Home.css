@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: var(--body-col) ;
+  background-color: var(--body-col);
 }
 
 .home {
@@ -265,6 +265,7 @@ h1, h4{
 
   .screenshot {
     padding: 0 15px;
+    min-width: 320px;
   }
 
   .screenshot:hover {
@@ -273,25 +274,26 @@ h1, h4{
   }
 
   .grid {
-    margin: 50px auto;
-    grid-template-areas: "calc calc shop-list shop-list" "tictactoe weather weather search";
+    margin: 50px;
+    grid-template-areas: "shop-list shop-list calc calc" "tictactoe randomQuote randomQoute bmiCalc";
     gap: 30px;
+  }
+
+  
+  .shop-list {
+    grid-area: shop-list;
   }
 
   .calc {
     grid-area: calc;
   }
 
-  .shop-list {
-    grid-area: shop-list;
+  .randomQuote {
+    grid-area: randomQoute;
   }
 
-  .weather {
-    grid-area: weather;
-  }
-
-  .search {
-    grid-area: search;
+  .bmiCalc {
+    grid-area: bmiCalc;
   }
 
   .tictactoe {
