@@ -8,50 +8,61 @@
   width: 100%; 
 }
 
-.title-bar {
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
 .project-title {
-  width: 60%;
+  margin: 0 auto;
+  width: 50%;
   text-align: center;
   font-size: 20px;
+  color: var(--text-main-col);
 }
 
 .nextBtn {
-  min-width: 40px;
-  border: none; 
-  background-color: transparent;
-  border: 2px solid var(--projects-col);
-  color: var(--projects-col);
-  border-radius: 5px;
-  position: absolute;
-  top: 75px;
-  right: 35%;
+  top: 0;
+  right: 0;
 }
 
 .prevBtn {
+  top: 0;
+  left: 0;
+}
+
+.prevBtn, .nextBtn {
+  margin: 0 10px;
   min-width: 40px;
   border: none;
   background-color: transparent;
-  border: 2px solid var(--projects-col);
-  color: var(--projects-col);
-  border-radius: 5px;
+  color: var(--text-main-col);
   position: absolute;
-  top: 75px;
-  left: 35%;
+  font-size: 30px;
+  transition: all 200ms ease-in-out;
+}
+
+.nextBtn:active, .prevBtn:active {
+  transform: scale(0.5);
 }
 
 .snippetSizeTip {
   text-align: center;
   font-size: 10px;
   margin: 10px;
-  color: var(--projects-col);
+  color: var(--green);
   font-family: monospace;
-  opacity: 0;
   transition: all 800ms ease;
+  animation-name: tipGlow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+
+@keyframes tipGlow { 
+  from {
+    text-shadow: 0 0 0px;
+  }
+  to {
+    text-shadow: 0 0 20px;
+  }
 }
 
 .snippetSizeTip.active {
@@ -59,8 +70,8 @@
 }
 
 .codepenSnippet {
-  margin: 10px auto;
-  height: 90vh;
+  margin: 30px auto;
+  height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -78,5 +89,24 @@
 @media screen and (min-width: 768px) {
   .codepenSnippet {
     width: 70%;
+  }
+
+  .prevBtn, .nextBtn {
+    font-size: 50px;
+  }
+
+  .prevBtn:hover, .nextBtn:hover {
+    cursor: pointer;
+    color: var(--magenta);
+  }
+
+  .prevBtn {
+    left: 5%; 
+    top: 40%;
+  }
+
+  .nextBtn {
+    right: 5%;
+    top: 40%;
   }
 }

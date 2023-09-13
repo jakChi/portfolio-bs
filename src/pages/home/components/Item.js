@@ -7,9 +7,7 @@ const Item = ({ className, picSrc, caption }) => {
     <div className={className}>
       <figure className="screenshot">
         <img src={picSrc} alt="screenshot of the project" />
-        <div className="middle-link">
-          <Link to="projects">See Details</Link>
-        </div>
+        <Link className="middle-link">See details</Link>
         <figcaption>{caption}</figcaption>
       </figure>
     </div>

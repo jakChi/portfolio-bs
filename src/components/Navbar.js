@@ -19,13 +19,10 @@ const CONTACT = <FontAwesomeIcon icon={faAt} />;
 
 const Navbar = ({ mobile }) => {
   const [clicked, setClicked] = useState(false);
-  const [currentPage, setCurrentPage] = useState("Home ");
 
   const handleClick = () => {
-    setClicked(!clicked);
+    mobile ? setClicked(!clicked) : setClicked(false);
   };
-
-  
 
   //when user scrolls navbar should hide with this but it's not working
 
@@ -47,24 +44,18 @@ const Navbar = ({ mobile }) => {
   //   prevScrollPos = scrollPos;
   // };
 
-  const handlePageChanges = (e) => {
-    setClicked(false);
-    setCurrentPage(e.target.innerText);
-  }
-
   //window.addEventListener("scroll", hideNavbar);
 
   return (
     <div className="navbar">
-      <div className="logo">
-        <Link
-          className="logo-img-link"
-          to={"/portfolio-bs"}
-          onClick={() => setClicked(false)}
-        >
-          <img src={logo} alt="logo" />
-        </Link>
-      </div>
+      <Link
+        className="logo"
+        to={"/portfolio-bs"}
+        onClick={() => setClicked(false)}
+      >
+        <img src={logo} alt="logo" />
+      </Link>
+
       {mobile ? (
         <i className="menu-icon" onClick={handleClick}>
           {clicked ? XMARK : MENU}
@@ -78,34 +69,16 @@ const Navbar = ({ mobile }) => {
         }
         onClick={() => setClicked(false)}
       >
-        <Link
-          className={`link ${
-            currentPage === "Home " ? "active-page" : null
-          }`}
-          to="/portfolio-bs"
-          onClick={handlePageChanges}
-        >
+        <Link className={`link`} to="/portfolio-bs">
           Home {HOME}
         </Link>
-        <Link
-          className={`link ${
-            currentPage === "Projects " ? "active-page" : null
-          }`}
-          to="projects"
-          onClick={handlePageChanges}
-        >
+        <Link className={`link`} to="projects">
           Projects {PROJECTS}
         </Link>
-        <Link
-          className={`link ${
-            currentPage === "Contact " ? "active-page" : null
-          }`}
-          to="contact"
-          onClick={handlePageChanges}
-        >
+        <Link className={`link`} to="contact">
           Contact {CONTACT}
         </Link>
-        {clicked ? (
+        {mobile && clicked ? (
           <h4 className="developer-text">Developed By JakChi</h4>
         ) : null}
       </ul>

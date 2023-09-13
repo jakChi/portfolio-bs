@@ -1,7 +1,7 @@
 import calc from "../../assets/images/calc.png";
 import shopList from "../../assets/images/shopping-list.png";
 import ticTacToe from "../../assets/images/tictactoe.png";
-import RandomQuote from "../../assets/images/random-quotes.png";
+import RandomQuote from "../../assets/images/randomQuote.png";
 
 const ProjectsArr = [
   {
@@ -36,7 +36,7 @@ const ProjectsArr = [
     name: "Random Quotes",
     githubUrl: "",
     snippet: `https://codepen.io/CamperIO/embed/ExLaPgZ?default-tab=result&editable=true&theme-id=dark`,
-    className: "randomQuote",
+    className: "random-qoute",
     picSrc: RandomQuote,
     caption: "Random Quote Generator",
   },

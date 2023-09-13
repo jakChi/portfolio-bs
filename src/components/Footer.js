@@ -37,16 +37,10 @@ const Footer = () => {
         <Link to="contact">sing up</Link>
       </ul>
       <address className="copyright">
-        <p>&copy; Developed by jakChi 2023 | All Rights Reserved</p>
+        <p>&copy; Designed and developed by jakChi 2023 | All Rights Reserved</p>
       </address>
     </div>
   );
 };
 
 export default Footer;
-
-<div class="parent">
-  <div class="div1"> </div>
-  <div class="div2"> </div>
-  <div class="div3"> </div>
-</div>;

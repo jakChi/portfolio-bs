@@ -12,7 +12,7 @@ function App() {
   const [mobile, setMobile] = useState(true);
 
   const handleMobileView = () => {
-    window.innerWidth < 400 ? setMobile(true) : setMobile(false);
+    window.innerWidth <= 425 ? setMobile(true) : setMobile(false);
   }
 
   useEffect(() => {
