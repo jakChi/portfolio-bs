@@ -41,14 +41,23 @@ body {
   opacity: 80%;
 }
 
-h1, h3{
+ h3{
   text-align: center;
-  margin-top: 0;
-  padding: 30px;
+  margin: 20px auto;
+	width: 90%;
   color: var(--dark); 
+	font-size: 13px;
+}
+
+.welcome-txt {
+	margin: auto;
+	text-align: center;
+	width: 80%;
+	font-size: 17px;
 }
 
 .gradient-word {
+	font-size: 15px;
   background: var(--gradient);
   background-clip: text;
   -webkit-text-fill-color: transparent;

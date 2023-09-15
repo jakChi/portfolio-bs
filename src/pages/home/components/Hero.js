@@ -21,10 +21,9 @@ const Hero = ({ mobile }) => {
           poster="https://th.bing.com/th/id/OIP.gYyvBOuQwXSWuefMRBZp9gAAAA?pid=ImgDet&rs=1"
         />
 
-        <h1>Hi my name is Jakob Tchintcharauli</h1>
+        <h1 className="welcome-txt">Welcome to my portfolio!</h1>
         <h3>
-          I am a self taught <span className="gradient-word">React</span>{" "}
-          developer and Computational biologist
+          I will help you develop your <span className="gradient-word">React</span> website
         </h3>
         <div className="txt-btn-group">
           <div className="contact-div">
