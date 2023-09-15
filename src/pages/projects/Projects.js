@@ -6,7 +6,7 @@ import {
   faArrowAltCircleLeft,
   faArrowAltCircleRight,
   faLightbulb,
-} from "@fortawesome/free-regular-svg-icons";
+} from "@fortawesome/free-solid-svg-icons";
 import ProjectsArr from "./ProjectsData";
 
 const BULB = <FontAwesomeIcon icon={faLightbulb} />;

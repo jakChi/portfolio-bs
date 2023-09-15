@@ -55,7 +55,6 @@ const Navbar = ({ mobile }) => {
       >
         <img src={logo} alt="logo" />
       </Link>
-
       {mobile ? (
         <i className="menu-icon" onClick={handleClick}>
           {clicked ? XMARK : MENU}

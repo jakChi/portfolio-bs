@@ -42,27 +42,12 @@
 }
 
 .snippetSizeTip {
+	margin: 10px 0;
   text-align: center;
   font-size: 10px;
-  margin: 10px;
   color: var(--green);
   font-family: monospace;
-  transition: all 800ms ease;
-  animation-name: tipGlow;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
   opacity: 0;
-}
-
-@keyframes tipGlow { 
-  from {
-    text-shadow: 0 0 0px;
-  }
-  to {
-    text-shadow: 0 0 20px;
-  }
 }
 
 .snippetSizeTip.active {

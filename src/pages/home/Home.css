@@ -10,101 +10,156 @@ body {
 }
 
 .home {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .hero {
   width: 100%; 
-  height: 100vh;
-  border-radius: 5px;
+  height: 80vh;
+	font-family: 'Press Start 2P', cursive;
 }
 
 .video-frame {
-  width: 98%;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
-  margin: 20px auto;
   object-fit: contain;
   position: relative;
-  /* box-shadow: inset 0 0 100px 10px rgba(0, 0, 0, 0.336); */
+	display: flex; 
+	flex-direction: column; 
+	align-items: center;
+	justify-content: center;
+  box-shadow: inset 0 0 1000px 1px rgba(0, 0, 0, 0.336); 
   z-index: 1;
 }
 
 .video-frame > video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  position: absolute;  
-  z-index: -1;
-  filter: blur(200px);
-  opacity: 80%;
+  display: none;
 }
 
- h3{
-  text-align: center;
-  margin: 20px auto;
-	width: 90%;
-  color: var(--dark); 
-	font-size: 13px;
-}
-
+/*aq animacia minda glow*/
 .welcome-txt {
-	margin: auto;
+	margin: 30px auto;
 	text-align: center;
-	width: 80%;
-	font-size: 17px;
+	width: 95%;
+	font-size: 24px;
+	line-height: 25px;
+	font-family: 'Nabla', cursive;
+	text-shadow: 0 0 30px var(--green), 0 0 30px var(--text-main-col);
 }
 
+/*
 .gradient-word {
-	font-size: 15px;
+	font-size: 12px;
   background: var(--gradient);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+*/
 
 .txt-btn-group {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+	justify-content: space-evenly;
   width: 90%;
   height: 60vh;
-  margin: auto;
 }
 
 .contact-div, .projects-div {
-  width: 90%;
-  height: 40%;
-  display: flex;
-  justify-content: space-around;
-  position: relative;
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center;
+  width: 100%;
+	height: 40%;
 }
 
 .contact-text, .projects-text {
-  width: 60%;
-  max-width: 300px;
-  margin: auto 0;
-  padding: 5px; 
+  width: 100%;
+	text-align: center;
+  max-width: 400px;
   color: var(--green);
+	font-size: 13px;  
+	line-height: 20px;
+	text-shadow: 2px 2px 0 var(--magenta);
 }
 
-/* aq rame martivi selectori unda vipovo */
-.contact-div > i {
-  position: absolute;
-  top: 25px;
-  left: 82%;
-  font-size: 25px;
-  color: var(--text-main-col);
-}
-.projects-div > i {
-  position: absolute;
-  bottom: 25px;
-  right: 82%;
-  font-size: 25px;
-  color:var(--text-main-col);
+.pixel-border {
+	margin: 30px 0;
+	width: 50%;
+	max-width: 130px;
+	min-height: 18px;
+	border: none;
+	outline: none;
+	font-size: 12px;
+	font-family: 'Press Start 2P', cursive;
+	background: var(--pixel-bg);
+	color: var(--green);
+	transition: all 300ms ease;
+	box-shadow:
+	/* Inner Background Color */
+		0 calc(var(--pixel) * -3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
+		0 calc(var(--pixel) * 3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
+		0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
+		0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
+		0 calc(var(--pixel) * -9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
+		0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
+		0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
+		0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
+		
+	/* Pixel Border Layer 1 */
+		calc(var(--pixel) * -1) 0 0 0 var(--pixel-border),
+		var(--pixel) 0 0 0 var(--pixel-border),
+		0 calc(var(--pixel) * -2) 0 0 var(--pixel-border),
+		0 calc(var(--pixel) * 2) 0 0 var(--pixel-border),
+		0 calc(var(--pixel) * -5) 0 calc(var(--pixel) * -1) var(--pixel-border),
+		0 calc(var(--pixel) * 5) 0 calc(var(--pixel) * -1) var(--pixel-border),
+		0 calc(var(--pixel) * -7) 0 calc(var(--pixel) * -2) var(--pixel-border),
+		0 calc(var(--pixel) * 7) 0 calc(var(--pixel) * -2) var(--pixel-border),
+		0 calc(var(--pixel) * -10) 0 calc(var(--pixel) * -4) var(--pixel-border),
+		0 calc(var(--pixel) * 10) 0 calc(var(--pixel) * -4) var(--pixel-border),
+		0 calc(var(--pixel) * -13) 0 calc(var(--pixel) * -6) var(--pixel-border),
+		0 calc(var(--pixel) * 13) 0 calc(var(--pixel) * -6) var(--pixel-border),
+		
+	/* Pixel Border Layer 2 */
+		calc(var(--pixel) * -2) 0 0 0 var(--pixel-border-2),
+		calc(var(--pixel) * 2) 0 0 0 var(--pixel-border-2),
+		0 calc(var(--pixel) * -1) 0 var(--pixel) var(--pixel-border-2), 
+		0 var(--pixel) 0 var(--pixel) var(--pixel-border-2),
+		0 calc(var(--pixel) * -4) 0 0 var(--pixel-border-2),
+		0 calc(var(--pixel) * 4) 0 0 var(--pixel-border-2),
+		0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -1) var(--pixel-border-2),
+		0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -1) var(--pixel-border-2),
+		0 calc(var(--pixel) * -8) 0 calc(var(--pixel) * -2) var(--pixel-border-2),
+		0 calc(var(--pixel) * 8) 0 calc(var(--pixel) * -2) var(--pixel-border-2),
+		0 calc(var(--pixel) * -11) 0 calc(var(--pixel) * -4) var(--pixel-border-2),
+		0 calc(var(--pixel) * 11) 0 calc(var(--pixel) * -4) var(--pixel-border-2),
+		0 calc(var(--pixel) * -14) 0 calc(var(--pixel) * -6) var(--pixel-border-2),
+		0 calc(var(--pixel) * 14) 0 calc(var(--pixel) * -6) var(--pixel-border-2),
+		
+	/* Border Layer 3: --pixel-border-3 */
+		calc(var(--pixel) * -3) 0 0 0 var(--pixel-border-3),
+		calc(var(--pixel) * 3) 0 0 0 var(--pixel-border-3),
+		0 0 0 calc(var(--pixel) * 2) var(--pixel-border-3),
+		0 calc(var(--pixel) * -3) 0 var(--pixel) var(--pixel-border-3),
+		0 calc(var(--pixel) * 3) 0 var(--pixel) var(--pixel-border-3),
+		0 calc(var(--pixel) * -5) 0 0 var(--pixel-border-3),
+		0 calc(var(--pixel) * 5) 0 0 var(--pixel-border-3),
+		0 calc(var(--pixel) * -7) 0 calc(var(--pixel) * -1) var(--pixel-border-3),
+		0 calc(var(--pixel) * 7) 0 calc(var(--pixel) * -1) var(--pixel-border-3),
+		0 calc(var(--pixel) * -9) 0 calc(var(--pixel) * -2) var(--pixel-border-3), 
+		0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -2) var(--pixel-border-3),
+		0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -4) var(--pixel-border-3), 
+		0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -4) var(--pixel-border-3),
+		0 calc(var(--pixel) * -15) 0 calc(var(--pixel) * -6) var(--pixel-border-3), 
+		0 calc(var(--pixel) * 15) 0 calc(var(--pixel) * -6) var(--pixel-border-3);
 }
 
+.pixel-border:active {
+	transform: scale(70%);
+	
+}
 
 .projects-rev {
   width: 98%;
@@ -113,7 +168,7 @@ body {
 }
 
 .grid-title {
-  width: 30%;
+  width: 70%;
   margin: 20px auto;
   padding: 10px;
   text-align: center;
@@ -131,7 +186,7 @@ body {
   padding: 0 10px; 
   width: 80%;
   max-width: 370px;
-  max-height: 270px;
+  max-height: 280px;
   background-color: var(--footer-col);
   text-align: center;
   border: 1px solid var(--text-main-col);
@@ -159,7 +214,9 @@ body {
   margin: 5px auto;
   padding: 5px 0;
   width: 70%;
+	height: 25px;
   color: var(--text-main-col);
+	font-size: 13px;
   transition: all 1s ease;
   position: relative;
 }
@@ -229,6 +286,19 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+
+	.video-frame > video {
+		display: unset;
+		object-fit: cover;
+		width: 70%;
+		height: 70%;
+		border-radius: 5px;
+		position: absolute;  
+		top: 30%;
+		z-index: -1;
+		filter: blur(100px);
+		opacity: 60%;
+	}
 
   .grid {
     grid-template-columns: repeat(2, auto);
