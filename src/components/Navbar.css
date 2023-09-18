@@ -28,6 +28,7 @@ body {
   width: 25%;
   max-width: 100px;
   min-width: 80px;
+  outline: none;
   z-index: 3;
 }
 

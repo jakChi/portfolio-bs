@@ -6,40 +6,46 @@
 .contact {
   margin-top: 100px;
   width: 100%;
-  text-align: center;
 }
 
-.title {
-  width: 80%;
-  padding: 10px;
-  margin: auto;
-  font-size: 17px;
-  color: var(--green);
-  text-align: center;
+.email {
+  width: 100%;
 }
 
 .email-form {
   margin: 30px auto;
-  width: 80%;
+  width: 90%;
   height: 20vh;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;  
+  flex-direction: column; 
+  text-align: center;
 }
+
+.email-label, .email-input {
+  display: block;
+}
+
+.email-label {
+  width: 100%;
+  padding: 0;
+  font-size: 16px;
+  color: var(--green);
+  text-align: center;
+}
+
 
 .email-input {
   outline: none;
   width: 50%;
   height: 30%;
   max-height: 30px;
-  margin: 5px;
+  margin: 20px auto;
   padding: 5px;
   background-color: transparent;
   border: 2px solid var(--text-main-col);
   border-radius: 10px;
   text-align: center;
-  font-size: 14px;
+  font-size: 11px;
   color: var(--green);
   transition: all 300ms ease;
 }
@@ -89,10 +95,32 @@
   color: var(--footer-col);
 } */
 
-.about {
-  margin: auto;
+.info {
+  margin: 20px auto;
+  width: 100%;
+  height: 100%;
+}
+
+.info > .title {
+  margin: 30px auto;
+  padding: 0 10px;
+  color: var(--green);
+}
+
+.about-list {
+  color: var(--green)
+}
+
+.product-list {
   width: 90%;
- 
+  margin: auto;
+  padding: 5px;
+}
+
+.product-list > li, .about-list > li {
+  margin: 10px 0;
+  color: var(--green);
+  cursor:default;
 }
 
 .resume {
@@ -105,10 +133,8 @@
 
 @media screen and (min-width: 768px) {
   
-  .title {
-    max-width: 400px;
-    font-size: 24px;
-    margin: 20px auto;
+  .email-label, .email-input {
+    display: inline; 
   }
  
   .email-form {

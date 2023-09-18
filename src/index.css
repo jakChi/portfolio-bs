@@ -5,25 +5,43 @@
   --magenta: #a907b8;
   --green: #00dd63;
   --dark: #000000;
-  --main-font: 'Josefin Sans', sans-serif;
-  --nav-font: 'Saira Condensed', sans-serif;
+  --main-font: "Josefin Sans", sans-serif;
+  --nav-font: "Saira Condensed", sans-serif;
   --footer-col: #0a0229;
-  --gradient: linear-gradient(213deg, rgb(255, 225, 0) 0%, rgb(30, 255, 0) 100%);
-	
-	--pixel-bg: var(--body-col);
-	/* ↑ Inner background color */
-	
-	--pixel-border: var(--text-main-col);
-	/* ↑ Inner border color */
-	
-	--pixel-border-2: var(--magenta);
-	/* ↑ Middle border color */
-	
-	--pixel-border-3: var(--pixel-border);
-	/* ↑ Outer border color */
-	
-	--pixel: .125rem;
-	/* ↑ Pixel size */
+  --gradient: linear-gradient(
+    213deg,
+    rgb(255, 225, 0) 0%,
+    rgb(30, 255, 0) 100%
+  );
+
+  --pixel-bg: var(--body-col);
+  /* ↑ Inner background color */
+
+  --pixel-border: var(--text-main-col);
+  /* ↑ Inner border color */
+
+  --pixel-border-2: var(--magenta);
+  /* ↑ Middle border color */
+
+  --pixel-border-3: var(--pixel-border);
+  /* ↑ Outer border color */
+
+  --pixel: 0.125rem;
+  /* ↑ Pixel size */
 
   font-family: var(--main-font);
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--fav-light);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--text-main-col);
+  border-radius: 5px;
 }
