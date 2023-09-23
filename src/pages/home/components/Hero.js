@@ -35,7 +35,7 @@ const Hero = ({ mobile }) => {
             <Link to={"contact"} className="pixelated-btn">Click me!</Link>
           </div>
           <div className="projects-div">
-            <p className="projects-text">visit my projects page here</p>
+            <p className="projects-text">visit projects page here or take a quick look below</p>
             <Link to={"projects"} className="pixelated-btn">Click me!</Link>
           </div>
         </div>

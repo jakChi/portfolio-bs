@@ -14,21 +14,6 @@
     rgb(30, 255, 0) 100%
   );
 
-  --pixel-bg: var(--body-col);
-  /* ↑ Inner background color */
-
-  --pixel-border: var(--text-main-col);
-  /* ↑ Inner border color */
-
-  --pixel-border-2: var(--magenta);
-  /* ↑ Middle border color */
-
-  --pixel-border-3: var(--pixel-border);
-  /* ↑ Outer border color */
-
-  --pixel: 0.125rem;
-  /* ↑ Pixel size */
-
   font-family: var(--main-font);
 }
 

@@ -8,7 +8,7 @@ import ProjectsArr from "../../projects/ProjectsData";
 const ProjectsRev = () => {
   return (
     <div className="projects-rev">
-      <h2 className="grid-title">Projects Review</h2>
+      <h2 className="title">Projects review</h2>
       <div className="grid">
         {ProjectsArr.map((project, index) => (
           <Item

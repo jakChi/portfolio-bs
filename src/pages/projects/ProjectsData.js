@@ -2,6 +2,7 @@ import calc from "../../assets/images/calc.png";
 import shopList from "../../assets/images/shopping-list.png";
 import ticTacToe from "../../assets/images/tictactoe.png";
 import RandomQuote from "../../assets/images/randomQuote.png";
+import bmiCalc from "../../assets/images/BMI.png";
 
 const ProjectsArr = [
   {
@@ -46,7 +47,7 @@ const ProjectsArr = [
     githubUrl: "",
     snippet: `https://codepen.io/CamperIO/embed/YzRMVBo?default-tab=result&editable=true&theme-id=dark`,
     className: "bmiCalc",
-    picSrc: "",
+    picSrc: bmiCalc,
     caption: "Body Mass Index calculator",
   },
 ];
