@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-bs/static/css/main.5d959236.css",
-    "main.js": "/portfolio-bs/static/js/main.fb8f824c.js",
+    "main.css": "/portfolio-bs/static/css/main.5b37f610.css",
+    "main.js": "/portfolio-bs/static/js/main.72e5f1e8.js",
     "static/media/gradient.mp4": "/portfolio-bs/static/media/gradient.8359d54837f56a17bfc5.mp4",
-    "static/media/jazz-blog.png": "/portfolio-bs/static/media/jazz-blog.306a2e0af40bc00c8bc2.png",
     "static/media/logo2.png": "/portfolio-bs/static/media/logo2.e69849f236fc981d60c6.png",
-    "static/media/search-filter.png": "/portfolio-bs/static/media/search-filter.d12d8a740d47f5f5b330.png",
     "static/media/calc.png": "/portfolio-bs/static/media/calc.1006db3487b050e4c96b.png",
-    "static/media/tictactoe.png": "/portfolio-bs/static/media/tictactoe.3e29eb1e4b343d5c5284.png",
+    "static/media/tictactoe.png": "/portfolio-bs/static/media/tictactoe.2e94c173a815d059efd1.png",
     "index.html": "/portfolio-bs/index.html",
-    "main.5d959236.css.map": "/portfolio-bs/static/css/main.5d959236.css.map",
-    "main.fb8f824c.js.map": "/portfolio-bs/static/js/main.fb8f824c.js.map"
+    "main.5b37f610.css.map": "/portfolio-bs/static/css/main.5b37f610.css.map",
+    "main.72e5f1e8.js.map": "/portfolio-bs/static/js/main.72e5f1e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d959236.css",
-    "static/js/main.fb8f824c.js"
+    "static/css/main.5b37f610.css",
+    "static/js/main.72e5f1e8.js"
   ]
 }
