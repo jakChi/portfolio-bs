@@ -9,7 +9,7 @@ body {
 }
 
 .home {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .hero {
@@ -19,7 +19,7 @@ body {
 
 .video-frame {
   width: 100%;
-  height: 90%;
+  height: 95%;
   border-radius: 5px;
   object-fit: contain;
   position: relative;
@@ -35,12 +35,11 @@ body {
   display: none;
 }
 
-/*aq animacia minda glow*/
 .welcome-txt {
   text-align: center;
   width: 95%;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 45px;
+  line-height: 50px;
   font-family: "Nabla", cursive;
   user-select: none;
 }
@@ -77,25 +76,25 @@ body {
 }
 
 .pixelated-btn {
-  margin: 0;
+  margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35%;
+  width: 40%;
   max-width: 130px;
-  min-height: 25px;
+  min-height: 35px;
   border: 2px solid var(--text-main-col);
+  border-radius: 10px;
   outline: none;
   text-decoration: none;
   font-size: 14px;
   background-color: transparent;
   color: var(--green);
-  transition: all 300ms ease;
+  transition: all 200ms ease;
 }
 
 .pixelated-btn:active {
-  transform: scale(90%);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .projects-rev {
@@ -252,14 +251,10 @@ body {
     font-size: 40px;
   }
 
-  .gradient-word {
+  .first-word {
     margin-right: 100%;
     font-size: 80px;
   }
-
-  /*  background: var(--gradient);
-    background-clip: text;
-    -webkit-text-fill-color: transparent; */
 
   .txt-btn-group {
     width: 40%;
@@ -329,7 +324,7 @@ body {
     line-height: 80px;
   }
 
-  .gradient-word {
+  .first-word {
     font-size: 90px;
   }
 

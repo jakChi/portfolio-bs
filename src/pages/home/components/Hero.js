@@ -1,10 +1,9 @@
 import React from "react";
 import "../Home.css";
 import video from "../../../assets/videos/gradient.mp4";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import { faReact } from "@fortawesome/free-brands-svg-icons";
-
 //document.getElementsByClassName("video").defaultPlaybackRate = 3.0;
 
 const Hero = ({ mobile }) => {
@@ -21,13 +20,8 @@ const Hero = ({ mobile }) => {
           poster="https://th.bing.com/th/id/OIP.gYyvBOuQwXSWuefMRBZp9gAAAA?pid=ImgDet&rs=1"
         />
 
-        {/*
-				<i><FontAwesomeIcon icon={faReact}/></i>
-				
-				*/}
-
         <h1 className="welcome-txt">
-          <span className="gradient-word">Welcome</span> to my portfolio!
+          <span className="first-word">Welcome</span> to my portfolio!
         </h1>
         <div className="txt-btn-group">
           <div className="contact-div">

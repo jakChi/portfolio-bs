@@ -3,15 +3,16 @@
   --text-main-col: #13c296;
   --fav-light: #0aa5985e;
   --magenta: #a907b8;
+  --purple: rgb(150, 2, 248);
   --green: #00dd63;
-  --dark: #000000;
+  --dark: #00000093;
   --main-font: "Josefin Sans", sans-serif;
   --nav-font: "Saira Condensed", sans-serif;
   --footer-col: #0a0229;
   --gradient: linear-gradient(
-    213deg,
-    rgb(255, 225, 0) 0%,
-    rgb(30, 255, 0) 100%
+    220deg,
+    rgb(255, 0, 170) 20%,
+    rgb(0, 17, 255) 100%
   );
 
   font-family: var(--main-font);

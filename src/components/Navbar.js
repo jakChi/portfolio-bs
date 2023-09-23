@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../components/Navbar.css";
 import { Link } from "react-router-dom";
 import logo from "../logo2.png";
@@ -68,13 +68,13 @@ const Navbar = ({ mobile }) => {
         }
         onClick={() => setClicked(false)}
       >
-        <Link className={`link`} to="/portfolio-bs">
+        <Link className={`link`} to="/portfolio-bs" title="Home page">
           Home {HOME}
         </Link>
-        <Link className={`link`} to="projects">
+        <Link className={`link`} to="projects" title="Projects page">
           Projects {PROJECTS}
         </Link>
-        <Link className={`link`} to="contact">
+        <Link className={`link`} to="contact" title="Contact page">
           Contact {CONTACT}
         </Link>
         {mobile && clicked ? (

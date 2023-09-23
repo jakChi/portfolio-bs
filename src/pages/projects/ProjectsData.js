@@ -8,7 +8,7 @@ const ProjectsArr = [
   {
     id: 1,
     name: "Retro Calculator",
-    githubUrl: "",
+    githubUrl: "https://github.com/jakChi/retro-calculator",
     snippet: `https://codepen.io/CamperIO/embed/GRGmQxm?default-tab=result&editable=true&theme-id=dark`,
     className: "calc",
     picSrc: calc,
@@ -17,7 +17,7 @@ const ProjectsArr = [
   {
     id: 2,
     name: "Shopping List",
-    githubUrl: "",
+    githubUrl: "https://github.com/jakChi/Shopping-list",
     snippet: `https://codepen.io/CamperIO/embed/qBQvPVL?default-tab=result&editable=true&theme-id=dark`,
     className: "shop-list",
     picSrc: shopList,
@@ -26,7 +26,7 @@ const ProjectsArr = [
   {
     id: 3,
     name: "Tic-Tac-Toe",
-    githubUrl: "",
+    githubUrl: "https://github.com/jakChi/Tic-Tac-Toe",
     snippet: `https://codepen.io/CamperIO/embed/oNaJVbO?default-tab=result&editable=true&theme-id=dark`,
     className: "tictactoe",
     picSrc: ticTacToe,

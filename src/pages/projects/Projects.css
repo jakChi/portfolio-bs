@@ -5,15 +5,25 @@
 
 .projects {
   margin-top: 100px;
-  width: 100%; 
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  margin: 10px auto;
 }
 
 .project-title {
-  margin: 0 auto;
-  width: 50%;
-  text-align: center;
+  text-decoration: none;
   font-size: 20px;
-  color: var(--text-main-col);
+  font-family: var(--nav-font);
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
+  transition: all 300ms ease;
+}
+
+.project-title:active {
+  color: var(--purple);
 }
 
 .nextBtn {
@@ -26,7 +36,8 @@
   left: 0;
 }
 
-.prevBtn, .nextBtn {
+.prevBtn,
+.nextBtn {
   margin: 0 10px;
   min-width: 40px;
   border: none;
@@ -37,12 +48,13 @@
   transition: all 200ms ease-in-out;
 }
 
-.nextBtn:active, .prevBtn:active {
+.nextBtn:active,
+.prevBtn:active {
   transform: scale(0.5);
 }
 
 .snippetSizeTip {
-	margin: 10px 0;
+  margin: 10px 0;
   text-align: center;
   font-size: 10px;
   color: var(--green);
@@ -65,28 +77,39 @@
 }
 
 .codepenSnippet > iframe {
-  width:100%;
+  width: 100%;
   height: 100%;
   border: none;
-  color: var(--projects-col)
+  color: var(--projects-col);
 }
 
 @media screen and (min-width: 768px) {
+  .project-title {
+    width: 25%;
+    font-size: 30px;
+  }
+
+  .project-title:hover {
+    border-color: var(--purple);
+  }
+
   .codepenSnippet {
     width: 70%;
   }
 
-  .prevBtn, .nextBtn {
+  .prevBtn,
+  .nextBtn {
     font-size: 50px;
   }
 
-  .prevBtn:hover, .nextBtn:hover {
+  .prevBtn:hover,
+  .nextBtn:hover {
     cursor: pointer;
-    color: var(--magenta);
+    color: var(--purple);
   }
 
   .prevBtn {
-    left: 5%; 
+    left: 5%;
     top: 40%;
   }
 
