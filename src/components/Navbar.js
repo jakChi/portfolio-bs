@@ -6,14 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareCaretDown,
   faSquareXmark,
-  faHouseFlag,
+  faHouse,
   faBarsProgress,
   faAt,
 } from "@fortawesome/free-solid-svg-icons";
 
 const MENU = <FontAwesomeIcon icon={faSquareCaretDown} />;
 const XMARK = <FontAwesomeIcon icon={faSquareXmark} />;
-const HOME = <FontAwesomeIcon icon={faHouseFlag} />;
+const HOME = <FontAwesomeIcon icon={faHouse} />;
 const PROJECTS = <FontAwesomeIcon icon={faBarsProgress} />;
 const CONTACT = <FontAwesomeIcon icon={faAt} />;
 
@@ -69,13 +69,13 @@ const Navbar = ({ mobile }) => {
         onClick={() => setClicked(false)}
       >
         <Link className={`link`} to="/portfolio-bs" title="Home page">
-          Home {HOME}
+          {HOME} Home
         </Link>
         <Link className={`link`} to="projects" title="Projects page">
-          Projects {PROJECTS}
+          {PROJECTS} Projects
         </Link>
         <Link className={`link`} to="contact" title="Contact page">
-          Contact {CONTACT}
+          {CONTACT} Contact
         </Link>
         {mobile && clicked ? (
           <h4 className="developer-text">Developed By JakChi</h4>
