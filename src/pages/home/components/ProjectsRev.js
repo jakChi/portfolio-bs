@@ -16,6 +16,7 @@ const ProjectsRev = () => {
             className={project.className}
             picSrc={project.picSrc}
             caption={project.caption}
+            src={project.githubUrl}
           />
         ))}
       </div>
