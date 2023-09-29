@@ -82,6 +82,7 @@
   
     .soc-links>*:hover {
       transform: scale(1.2);
+      filter: drop-shadow(0 0 20px var(--green));
     }
   
     .other-links {
