@@ -61,6 +61,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--magenta);
+  border-radius: 20px;
 }
 
 .contact-text,
@@ -71,7 +73,6 @@ body {
   color: var(--text-main-col);
   font-size: 19px;
   line-height: 20px;
-  text-shadow: 2px 2px 3px var(--magenta);
   user-select: none;
 }
 
@@ -95,6 +96,8 @@ body {
 
 .pixelated-btn:active {
   border-radius: 5px;
+  border-color: var(--magenta);
+  color: var(--text-main-col);
 }
 
 .projects-rev {
@@ -120,8 +123,8 @@ body {
 }
 
 .screenshot {
-  margin: auto;
-  padding: 0 10px;
+  margin: 15px auto;
+  padding: 20px 5px;
   width: 80%;
   max-width: 370px;
   max-height: 280px;
@@ -196,9 +199,13 @@ body {
   box-shadow: 0 3px 7px 1px var(--text-main-col);
 }
 
+.screenshot:hover {
+  transform: scale(1.05);
+}
+
 .screenshot:hover > img {
-  transform: scale(1.02);
   filter: blur(2px);
+  transform: scale(120%);
 }
 
 .middle-link {
@@ -308,7 +315,7 @@ body {
   }
 
   .screenshot {
-    height: 270px;
+    height: 300px;
     min-width: 330px;
   }
 
@@ -318,7 +325,6 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-
   .welcome-txt {
     font-size: 70px;
     line-height: 80px;
@@ -328,7 +334,8 @@ body {
     font-size: 90px;
   }
 
-  .projects-text, .contact-text {
+  .projects-text,
+  .contact-text {
     width: 60%;
   }
 
@@ -337,7 +344,8 @@ body {
     font-size: 22px;
   }
 
-  .pixelated-btn::before, .pixelated-btn::after {
+  .pixelated-btn::before,
+  .pixelated-btn::after {
     width: 0;
     height: 0;
     content: "";
@@ -372,9 +380,14 @@ body {
     min-width: 320px;
   }
 
+  .screenshot img {
+    width: 350px;
+    height: 210px;
+  }
+
   .screenshot:hover {
     transform: scale(1.02);
-    box-shadow: 0 3px 10px 1px var(--text-main-col);
+    box-shadow: 0 15px 15px 1px var(--text-main-col);
   }
 
   .grid {

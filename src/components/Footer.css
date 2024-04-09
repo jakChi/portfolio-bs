@@ -62,7 +62,8 @@
 
 @media screen and (min-width: 480px) {
   .footer {
-      max-height: 35vh;
+      min-height: 30vh;
+      padding: 3rem 0;
       display: flex;
       flex-direction: column;
     }
